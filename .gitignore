@@ -1,0 +1,4 @@
+*.pdf
+*.log
+.DS_Store
+__MACOSX/
