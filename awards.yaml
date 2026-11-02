@@ -1,9 +1,24 @@
-- name: Example Innovation Competition
+- name: Example University Programming Selection
   level: First Prize
-  date: 2024.10
-- name: Example Robotics Challenge
+  date: "2025.11"
+- name: Example Undergraduate Networking Challenge
+  level: Honorable Mention
+  date: "2025.12"
+- name: Example University Innovation Grant
+  level: Funded
+  date: "2026.03"
+- name: Example Cloud Infrastructure Hackathon
   level: Finalist
-  date: 2024.06
+  date: "2026.04"
+- name: Example Collegiate Programming Contest
+  level: Regional Silver
+  date: "2026.05"
+- name: Example Open Source Contribution Scholarship
+  level: ""
+  date: "2026.06"
+- name: Example National Systems Design Contest
+  level: Second Prize
+  date: "2026.08"
 - name: Academic Excellence Scholarship
-  level: University Award
-  date: 2023.12
+  level: ""
+  date: "2026.09"
