@@ -1,8 +1,18 @@
 # Typst Resume Template
 
-Open-source Typst resume template. The sample is fictional placeholder content for a backend and infrastructure student. Do not ship real PII.
+Open-source Typst resume template. The restored layout follows the original compact style: a profile-highlight icon row and four showybox skill cards. Licensed under the MIT License; see [LICENSE](LICENSE).
 
-The layout is a compact English resume: a season badge, an icon row, four showybox skill cards, project subtitle lines, and a YAML awards list.
+The checked-in sample is fictional anonymized placeholder content for a backend and infrastructure student (storage, networking, and systems). It is not a real person. Do not ship real PII.
+
+## Layout
+
+- Top-right smallcaps season badge
+- Profile Highlights: Nerd Font icon row with a matching label row
+- Four showybox skill cards in a 2×2 table with a center rule
+- Project blocks with an italic organization line, a short bold summary, and bullets
+- Awards heading with a small grey note, filled from `awards.yaml`
+
+`resume.typ` defines the helpers `sub`, `awards-list`, and `skills-box`. It imports `@preview/basic-resume:0.2.9` and `@preview/showybox:2.0.4`.
 
 ## Build
 
@@ -12,16 +22,16 @@ Install [Typst](https://typst.app/), then run:
 typst compile resume.typ
 ```
 
-Warnings about a missing Nerd Font or KaiTi are safe to ignore. Install [Hack Nerd Font](https://www.nerdfonts.com/) if you want the profile-highlight icons to render. The generated PDF is ignored by Git.
+`*.pdf` is listed in `.gitignore`, so the generated PDF is not committed. Warnings about a missing Nerd Font or KaiTi are safe to ignore. Install [Hack Nerd Font](https://www.nerdfonts.com/) if you want the icon row to render.
 
 ## Files
 
-- `resume.typ` — layout, helpers (`sub`, `awards-list`, `skills-box`), and the fictional sample
-- `awards.yaml` — sample contests and scholarships
+- `resume.typ` — layout, helpers, and the fictional sample
+- `awards.yaml` — fictional contests and scholarships
+- `LICENSE` — MIT License
+- `.gitignore` — ignores `*.pdf`, logs, and macOS junk
 
-Packages: `@preview/basic-resume:0.2.9` and `@preview/showybox:2.0.4`.
-
-Optional SVG icons can live in `img/` and be referenced from the highlight row. The sample uses Nerd Font glyphs only, so no image assets are shipped.
+No `img/` directory is included. The sample icon row uses Nerd Font glyphs only. Add `img/` later if your own `resume.typ` references SVG files.
 
 ## Customize
 
@@ -29,4 +39,4 @@ Optional SVG icons can live in `img/` and be referenced from the highlight row. 
 2. Edit education, experience, projects, and the closing section.
 3. Update `awards.yaml`. Quote dates such as `"2026.05"` so Typst does not read them as floats.
 
-Review the repository before publishing. The checked-in text is a sample, not a real person. Remove phone numbers, personal emails, and any other identifiers you do not want public.
+Review the repository before publishing. Remove phone numbers, personal emails, and any other identifiers you do not want public.
