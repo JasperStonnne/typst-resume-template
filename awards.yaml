@@ -1,9 +1,9 @@
-- name: Example Innovation Competition
+- name: Example Programming Contest
   level: First Prize
-  date: 2024.10
-- name: Example Robotics Challenge
+  date: "2024.10"
+- name: Example Distributed Systems Contest
   level: Finalist
-  date: 2024.06
+  date: "2024.06"
 - name: Academic Excellence Scholarship
   level: University Award
-  date: 2023.12
+  date: "2023.12"
