@@ -1,6 +1,6 @@
 # Typst 简历模板
 
-两页英文简历，用 [Typst](https://typst.app/) 编写。示例是虚构的后端与基础设施学生，不是真人，不含真实个人信息。
+两页英文简历，用 [Typst](https://typst.app/) 编写。示例是虚构的后端与Infra学生，不是真人，不含真实个人信息。
 
 A two-page English resume written in [Typst](https://typst.app/). The sample is a fictional backend and infrastructure student — not a real person, and no real personal data.
 
