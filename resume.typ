@@ -88,8 +88,8 @@
 #[
   #set terms(hanging-indent: 0em)
   / Honors: Scholarship, Dean's List
-  / Core Courses: Data Structures, Operating Systems, Computer Networks, Machine Learning
-  / Interests: Robotics, Computer Vision, Developer Tools
+  / Core Courses: Data Structures, Operating Systems, Computer Networks, Database Systems
+  / Interests: Distributed Systems, Networking, Storage
 ]
 
 == Profile Highlights
@@ -99,23 +99,21 @@
   set table(stroke: .0pt, inset: 8pt)
   v(-.6em)
   table(
-    columns: for i in range(15) { (1fr,) },
+    columns: for i in range(12) { (1fr,) },
     align: alignment.horizon + center,
-    [#h(-4pt)\u{f17c}], [\u{e691}], [#h(-5pt)\u{e73c}], [#h(-5pt)\u{e646}],
-    [#h(-1pt)\u{e893}], [#image("img/PX4_logo.svg", width: 23pt)],
-    [#image("img/dji.svg", width: 24pt)], [#image("img/st-microelectronics.svg", width: 24pt)],
-    [#h(-5pt)\u{e68b}], [#h(-5pt)\u{e781}], [#h(-5pt)\u{f06e5}],
-    [#h(-3pt)\u{e702}], [#h(-3pt)\u{e794}], [#h(-2pt)\u{e7b0}],
+    [#h(-4pt)\u{f17c}], [\u{e691}], [\u{e61e}], [\u{e724}],
+    [\u{e68b}], [\u{e76d}], [\u{e76e}], [\u{e7f5}],
+    [#h(-2pt)\u{e7b0}], [#h(-3pt)\u{e702}], [#h(-3pt)\u{e794}],
     [#set text(size: 15pt); \u{f37f}],
   )
   v(-1.5em)
   set text(size: 7pt, font: "New Computer Modern")
   table(
-    columns: for i in range(15) { (1fr,) },
+    columns: for i in range(12) { (1fr,) },
     align: alignment.horizon + center,
     inset: 0em,
     stroke: none,
-    [Linux], [Shell], [Python], [C++], [ROS], [PX4], [DJI Dev], [STM32], [Rust], [JavaScript], [Swift], [Git], [CMake], [Docker], [Typst],
+    [Linux], [Shell], [C], [Go], [Rust], [Redis], [Postgres], [gRPC], [Docker], [Git], [CMake], [Typst],
   )
 }
 
@@ -126,21 +124,21 @@
     columns: (2fr, 2fr),
     align: center,
     table.vline(x: 1, start: 0, end: 2, stroke: (paint: gray, cap: "round", thickness: .2pt)),
-    [#skills-box(title: "Engineering & Automation", side: "left", points: (
-      "Build reliable automation for recurring engineering workflows.",
-      "Turn ambiguous requirements into maintainable systems.",
+    [#skills-box(title: "Backend Services", side: "left", points: (
+      "Design request paths, APIs, and service boundaries in C and Go.",
+      "Handle timeouts, retries, and partial failure without hidden state.",
     ))],
-    [#skills-box(title: "Robotics & Embedded Systems", side: "right", points: (
-      "Develop software across sensing, control, and deployment.",
-      "Validate prototypes through testing and field feedback.",
+    [#skills-box(title: "Systems Engineering", side: "right", points: (
+      "Work on Linux services where CPU, memory, and I/O stay predictable.",
+      "Use tracing and benchmarks to explain a performance change.",
     ))],
-    [#skills-box(title: "Product Delivery", side: "left", points: (
-      "Own projects from architecture and prototyping to documentation.",
-      "Prioritize reliability, usability, and measurable outcomes.",
+    [#skills-box(title: "Storage & Networking", side: "left", points: (
+      "Shape key-value and persistence layouts around recovery and correctness.",
+      "Debug packet paths, including RDMA-style links and eBPF probes.",
     ))],
-    [#skills-box(title: "Leadership & Collaboration", side: "right", points: (
-      "Coordinate cross-functional work and communicate tradeoffs clearly.",
-      "Support teammates through reusable tooling and shared practices.",
+    [#skills-box(title: "Engineering Delivery", side: "right", points: (
+      "Ship with tests, reproducible builds, and short operational notes.",
+      "Own rollout, measurement, and follow-up after a change lands.",
     ))],
   )
 ]
@@ -151,42 +149,42 @@
   company: "Example Technology Co.",
   dates: dates-helper(start-date: "Jul 2024", end-date: "Present"),
   location: "City, Country",
-  title: "Software Engineer",
+  title: "Backend Engineer",
 )
 
-- Designed and delivered a production service used by multiple internal teams.
-- Automated testing and release workflows, reducing repetitive manual work.
-- Collaborated with product and engineering stakeholders to define milestones.
+- Designed a Go service that routes requests and stores metadata for internal teams.
+- Tuned Redis-backed reads and the persistence path for common queries.
+- Automated test and release checks so deploys no longer depended on a manual list.
 
 #work(
-  company: "Example Robotics Lab",
+  company: "Example Systems Group",
   dates: dates-helper(start-date: "Jun 2023", end-date: "Jun 2024"),
   location: "City, Country",
-  title: "Research Assistant",
+  title: "Systems Engineering Intern",
 )
 
-- Built a robotics prototype integrating perception, planning, and control.
-- Created repeatable experiments and documented evaluation results.
+- Prototyped a Linux networking datapath and recorded throughput under load.
+- Wrote recovery notes for a key-value store used by internal services.
 
 == Projects
 
 #project(
-  name: "Open Robotics Toolkit",
+  name: "Example KV Store",
   role: "Lead Developer",
   dates: dates-helper(start-date: "2024", end-date: "Present"),
   url: "github.com/yourname/project-one",
 )
 
-A reusable toolkit for building and testing robotics applications. Add concise details about architecture, impact, and your contribution here.
+A small persistent key-value store. Summarize the on-disk layout, crash recovery, and your contribution here.
 
 #project(
-  name: "Developer Productivity Platform",
+  name: "Example Network Toolkit",
   role: "Creator",
   dates: dates-helper(start-date: "2023", end-date: "2024"),
   url: "github.com/yourname/project-two",
 )
 
-An automation platform that standardizes development, testing, and deployment workflows across projects.
+Utilities for inspecting Linux packet paths, with sample eBPF probes and an RDMA-style transport experiment.
 
 == Competitions and Awards
 
@@ -196,4 +194,4 @@ An automation platform that standardizes development, testing, and deployment wo
 
 - *Languages:* English, another language
 - *Leadership and Activities:* Student organization, open-source community
-- *Interests:* Robotics, design systems, technical writing
+- *Interests:* Distributed systems, networking, technical writing
