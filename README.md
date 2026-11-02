@@ -35,3 +35,7 @@ After you add your own details, review the repository before publishing and remo
 ## 许可 / License
 
 [MIT](LICENSE)
+
+致敬 FPG-GG：感谢其许可，本模板在其版式启发下开源。
+
+Layout inspired by FPG-GG; thanks for the permission to open-source this template.
